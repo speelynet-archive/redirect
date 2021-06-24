@@ -9,14 +9,14 @@ import (
 
 var _ = Describe("the Redirect function", func() {
 	It("should return a correctly modified URL string", func() {
-		for _, v := range []string{"example.com", "example.com/", "example.com/example/path", "example.com/example/path/"} {
+		for _, v := range []string{"speely.net", "speely.net/", "speely.net/example/path", "speely.net/example/path/"} {
 			u, _ := url.Parse("http://" + v)
 			Expect(redirect.Redirect(u)).To(Equal("https://" + v))
 		}
 	})
 	It("should retain URL queries", func() {
 		const queries = "?example=test&example2=test"
-		for _, v := range []string{"example.com/", "example.com/example/path"} {
+		for _, v := range []string{"speely.net/", "speely.net/example/path"} {
 			u, _ := url.Parse("http://" + v + queries)
 			Expect(redirect.Redirect(u)).To(Equal("https://" + v + queries))
 		}
