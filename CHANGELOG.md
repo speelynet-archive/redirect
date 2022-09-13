@@ -1,5 +1,8 @@
 # CHANGELOG
 
+### [v0.1.6](https://github.com/speelynet/redirect/tree/v0.1.6)
+- Upgrade [NGINX Unit] (https://unit.nginx.org) version in [CI/CD workflow](https://github.com/speelynet/redirect/tree/v0.1.5/.github/workflows/CICD.yml) from 1.27.0 to 1.28.0
+
 ### [v0.1.5](https://github.com/speelynet/redirect/tree/v0.1.5)
 - Upgrade [NGINX Unit](https://unit.nginx.org) version in [CI/CD workflow](https://github.com/speelynet/redirect/tree/v0.1.5/.github/workflows/CICD.yml) from 1.26.1 to 1.27.0
 - Change [license](https://github.com/speelynet/redirect/tree/v0.1.5/LICENSE)
